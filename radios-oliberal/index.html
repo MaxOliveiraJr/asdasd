@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <title>Liberal - Ao Vivo</title>
+</head>
+<style>
+    * {
+
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-self: center;
+        margin-inline: 8%;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: start;
+        height: 614px;
+    }
+
+    h3{
+        font-weight: 500;
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 28px;
+        width: 50%;
+        height: 100%;
+    }
+
+    .links .link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        padding: 25px;
+        color: white;
+        font-weight: 500;
+    }
+
+
+    .links .link img {
+        width: 50%;
+    }
+
+    .links .link .hr {
+        height: 0.5px;
+        width: 60%;
+        margin-block: 10px;
+        background-color: white;
+    }
+
+
+
+    .link-01 {
+        background-color: #32357e;
+    }
+
+    .link-02 {
+        background-color: #ea6c4f;
+    }
+
+    .link-03 {
+        background-color: #d9519d;
+    }
+
+    .link-04 {
+        background-color: #6475be;
+    }
+
+    .link-05 {
+        background-color: #95a323;
+    }
+
+    .link-06 {
+        background-color: #cb1a51;
+    }
+
+    .display {
+        width: 50%;
+        height: 614px;
+    }
+
+    
+    .display .live {
+        background-color: #fa2566;
+
+        color: white;
+        padding: 3px 10px;
+        border-radius: 6px;
+    }
+    .display .display-midias{
+        margin-top: 14px;
+        background-color: red;
+    }
+
+</style>
+
+<body>
+
+<form action="#" method="get">
+    <select name="lang" hidden>
+        <option selected value="pt">Português / Portuguese (pt)</option>
+    </select>
+    <select name="stretching" hidden>
+        <option value="auto" selected>Auto (default)</option>
+        <option value="responsive">Responsive</option>
+        <option value="fill" selected>Fill</option>
+        <option value="none" selected>None (original dimensions)</option>
+    </select>
+</form>
+
+    <main>
+
+        <h3>Escolha a rádio que deseja ouvir</h3>
+
+        <div class="container">
+            <div class="links">
+
+                <div class="link link-01">
+                    <img src="./assets/liberalfm.png" alt="">
+                    <div class="hr"></div>
+                    <span class="text">Belém</span>
+                </div>
+                <div class="link link-02">
+                    <img src="./assets/liberalfm.png" alt="">
+                    <div class="hr"></div>
+                    <span class="text">Belém</span>
+                </div>
+                <div class="link link-03">
+                    <img src="./assets/liberalfm.png" alt="">
+                    <div class="hr"></div>
+                    <span class="text">Belém</span>
+                </div>
+                <div class="link link-04">
+                    <img src="./assets/liberalfm.png" alt="">
+                    <div class="hr"></div>
+                    <span class="text">Belém</span>
+                </div>
+                <div class="link link-05">
+                    <img src="./assets/liberalfm.png" alt="">
+                    <div class="hr"></div>
+                    <span class="text">Belém</span>
+                </div>
+                <div class="link link-06">
+                    <img src="./assets/liberalfm.png" alt="">
+                    <div class="hr"></div>
+                    <span class="text">Belém</span>
+                </div>
+
+            </div>
+            <div class="display">
+                <span class="live">AO VIVO - BELÉM</span>
+                <div class="display-midias">
+                    <div class="display-video">
+                        <video width="100%" height="auto" controls>
+                        <source src="https://www.grupoliberalmedia.com.br/radiolive/_definst_/liveradio/playlist.m3u8"
+                            type="application/x-mpegURL" />
+                        
+                        </video>
+                    </div>
+                    <div class="display-audio"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+</body>
+
+</html>
